@@ -64,3 +64,5 @@ Pra ejecutar la imagen:
     en el localhost 26006
     
 7) Para cerrar docker: exit, para cerrar las otras instancias: ctrl+c
+8) Para ejecutar con fastapi : uvicorn api:app --host 0.0.0.0 --port 12000 --reload
+9) sudo apachectl start (creo haber utilizado esto)
