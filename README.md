@@ -18,12 +18,10 @@ Pra ejecutar la imagen:
   - make run: entro en la imagen
 3) Para construir una nueva imagen necesito modificar el nombre de los archivos en la siguiente sección:
             ```
-            # VARIABLES
               REGISTRY_URL=fitolobo
               VERSION=latest
               DOCKER_IMAGE=emotion-recogniton-text
               DOCKER_FILE=Dockerfile
-            
             ```
 4) Para instalar versiones y paquetes solo debo modificar el Dockerfile con las versiones que requiera, por ejemplo:
       ```
