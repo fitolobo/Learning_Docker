@@ -60,3 +60,7 @@ Pra ejecutar la imagen:
     El token es: 59f8c59c7bb114843ec8c0b5743658958d0f4b1c3927461d
     
     Abro el local host, cargo el token en el banner y tengo jupyter con las versiones que quiero de python. 
+6) Para correr tensorboard: make run-tensorboard 
+    en el localhost 26006
+    
+7) Para cerrar docker: exit, para cerrar las otras instancias: ctrl+c
