@@ -1,5 +1,5 @@
-# Learing_Docker
-Some docker files for data science working
+# Aprendiendo Docker
+# Docker para ciencia de datos y proyectos a fin
 
 Cuando necesite encontrar una imagen para construir un contenedor debo:
 
