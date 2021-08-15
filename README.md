@@ -1,4 +1,6 @@
 # Aprendiendo Docker
+- Inicialmente necesitarás: Xcode instalad y debes instalar docker desde la página oficial (docker desktop)
+
 # Docker para ciencia de datos y proyectos a fin
 
 Cuando necesite encontrar una imagen para construir un contenedor debo:
