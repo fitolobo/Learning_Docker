@@ -1,28 +1,43 @@
-FROM pytorch/pytorch:latest
+#FROM pytorch/pytorch:latest
+# Normal image
+FROM python:3.8.10
 
-RUN pip3 install transformers==4.4.2
+RUN apt-get update \
+&& apt-get upgrade -y \
+&& apt-get install -y \
+&& apt-get -y install apt-utils gcc libpq-dev libsndfile-dev
 
-RUN pip3 install numpy==1.19.4
-RUN pip3 install pandas==1.2.0
-RUN pip3 install scikit-learn==0.24.0
+#RUN apt-get -y update
+#RUN apt-get -y upgrade
+#RUN apt-get install -y ffmpeg
 
-RUN pip3 install audioread==2.1.9
-RUN pip3 install spicy==0.16.0
-RUN pip3 install joblib==1.0.0
+# no funciona cuando quiero usar pydub
+RUN pip3 install ffmpeg
 
-RUN pip3 install speechbrain==0.5.4
+# no funciono pyaudio
+#RUN apt-get install python-gnuradio-audio-portaudio
 
-RUN pip3 install tensorflow==2.4.0
+RUN apt-get update
+RUN apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 -y
 
 
-RUN pip3 install uvicorn==0.13.3
-RUN pip3 install fastapi==0.63.0
-
-RUN pip3 install eng-to-ipa
-RUN pip3 install textblob
+RUN pip3 install scikit-learn
+RUN pip3 install spicy
+RUN pip3 install raiwidgets
 
 RUN apt-get update
 RUN apt-get install -y make
 RUN pip3 install jupyterlab
+
+RUN pip3 install librosa
+RUN pip3 install matplotlib
+RUN pip3 install PyAudio
+RUN pip3 install torchaudio
+RUN pip3 install transformers
+RUN pip3 install datasets
+RUN pip3 install ipywidgets
+RUN pip3 install --upgrade jupyter_client
+RUN pip3 install tensorflow
+RUN pip3 install keras
 
 CMD ["/bin/bash"]

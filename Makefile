@@ -6,7 +6,7 @@ endef
 # VARIABLES
 REGISTRY_URL=fitolobo
 VERSION=latest
-DOCKER_IMAGE=emotion-recogniton-text
+DOCKER_IMAGE=better-me-goal
 DOCKER_FILE=Dockerfile
 
 ##############################################################################
