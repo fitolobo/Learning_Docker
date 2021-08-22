@@ -1,3 +1,9 @@
+# Preprocesamiento de los datos
+El cuaderno en jupyter notebook es el que preprocesa datos de audio desde la base de datos RAVDESS en Kaggle. Para el caso de nosotros necesitariamos una base de datos etiquetada y ojalá balanceada de estilos de música. Por ejemplo https://www.kaggle.com/c/music-genre-classification
+
+Creo que sería bueno comenzar por esa base de datos e intentar formular hipotesis de cuales son las caracteristicas estadísticamente determinantes para clasificar música. Una vez tengamos esa discusión y análsis exploratorio de los datos, podemos comenzar eligiendo un modelo de ML o DL. 
+
+
 # Aprendiendo Docker
 - Inicialmente necesitarás: Xcode instalado y debes instalar docker desde la página oficial (docker desktop)
 
